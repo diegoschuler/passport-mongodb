@@ -2,7 +2,7 @@
 
 namespace Laravel\Passport\Tests\Feature;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Laravel\Passport\Client;
 use Orchestra\Testbench\TestCase;
 
