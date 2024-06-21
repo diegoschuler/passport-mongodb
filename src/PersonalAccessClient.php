@@ -20,6 +20,10 @@ class PersonalAccessClient extends Model
      */
     protected $guarded = [];
 
+	protected $casts = [
+        'client_id' => \MongoDB\Laravel\Eloquent\Casts\ObjectId::class,
+    ];
+
     /**
      * Get all of the authentication codes for the client.
      *

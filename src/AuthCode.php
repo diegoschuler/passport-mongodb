@@ -33,6 +33,8 @@ class AuthCode extends Model
      * @var array
      */
     protected $casts = [
+		'user_id' => \MongoDB\Laravel\Eloquent\Casts\ObjectId::class,
+		'client_id' => \MongoDB\Laravel\Eloquent\Casts\ObjectId::class,
         'revoked' => 'bool',
         'expires_at' => 'datetime',
     ];
