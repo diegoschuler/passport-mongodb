@@ -41,7 +41,6 @@ class Client extends Model
      * @var array
      */
     protected $casts = [
-		'user_id' => \MongoDB\Laravel\Eloquent\Casts\ObjectId::class,
         'grant_types' => 'array',
         'scopes' => 'array',
         'personal_access_client' => 'bool',

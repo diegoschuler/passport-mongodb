@@ -40,7 +40,6 @@ class RefreshToken extends Model
      * @var array
      */
     protected $casts = [
-		'access_token_id' => \MongoDB\Laravel\Eloquent\Casts\ObjectId::class,,
         'revoked' => 'bool',
         'expires_at' => 'datetime',
     ];
